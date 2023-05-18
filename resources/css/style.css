@@ -51,13 +51,13 @@ p {
     font-size: 20px;
 }
 
-img.small {
-    width: 160px;
-    height: 140px;
+/* img .small {
+    width: 6rem;
+    height: 6rem;
     margin-left: 4em;
-}
+} */
 
-img.medium {
+img .medium {
     width: 650px;
     height: 600px;
 }

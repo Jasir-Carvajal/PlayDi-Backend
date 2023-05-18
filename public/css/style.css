@@ -10,7 +10,129 @@ font-weight: 400;
 font-style: normal;
 */
 
-html {
+body{
+    background-color: #fef5fa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body>div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 6rem;
+    padding: 2rem; 
+    margin-top: 6rem;
+}
+
+.illustration{
+    width: 35vw;
+    height: auto;
+    /* align-self: center; */
+}
+
+.icon{
+    width: 6rem;
+    height: auto;
+    position: fixed;
+    top: 1.5rem;
+    left: 2rem;
+    /* align-self: self-start; */
+    /* justify-content: flex-start; */
+}
+
+h1 {
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+
+p {
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.playdi {
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: #4944E9;
+    width: fit-content;
+    padding: 1.25rem 2.5rem;
+    display: inline;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FFCE44;
+    /* background-color: #615cf5; */
+}
+
+.btn a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: Fira Sans;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    body>div{
+        flex-direction: column;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .icon{
+        width: 5rem;
+        top: 1rem;
+        left: 1.5rem;
+    }
+
+    .illustration{
+        /* width: 50vw; */
+        display: none;
+    }
+
+    body>div{
+        gap: 0rem;
+        padding: 0rem; 
+        margin-top: 0rem;
+    }
+
+    .btn{
+        align-self: center;
+    }
+
+}
+/* 
+@media screen and (max-width: 768px) {
+
+    .illustration{
+        width: 70vw;
+    }
+
+} */
+
+/* html {
     font-size: 100%;
     background-color: #fef5fa;
 }
@@ -54,7 +176,8 @@ p {
 img.small {
     width: 160px;
     height: 140px;
-    margin-left: 4em;
+    /* margin-left: 4em; 
+    
 }
 
 img.medium {
@@ -64,9 +187,9 @@ img.medium {
 
 .img {
     display: inline-block;
-}
+} */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     h1 {
         margin-top: 0.5em;
     }
@@ -88,4 +211,4 @@ img.medium {
         height: auto;
     }
 
-}
+} */
